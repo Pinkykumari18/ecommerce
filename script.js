@@ -150,3 +150,4 @@ checkoutBtn.onclick = () => {
   updateCart();
   cartModal.style.display = "none";
 };
+
