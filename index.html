@@ -1,79 +1,68 @@
-/* =========================
-   NAVBAR STYLES
-========================= */
-.navbar {
-  background-color: var(--accent);
-  color: #fff;
-  box-shadow: 0 2px 5px var(--shadow);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopSphere - E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 1.5rem;
-}
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🛍️ ShopSphere</h1>
+    <div class="header-actions">
+      <button id="theme-toggle">🌙</button>
+      <button id="cart-btn">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </button>
+    </div>
+  </header>
 
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li class="nav-item active" data-category="all">All</li>
+      <li class="nav-item" data-category="electronics">Electronics</li>
+      <li class="nav-item" data-category="fashion">Fashion</li>
+      <li class="nav-item" data-category="accessories">Accessories</li>
+      <li class="nav-item" data-category="home">Home</li>
+      <li class="nav-item" data-category="gadgets">Gadgets</li>
+    </ul>
+  </nav>
 
-.nav-item {
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="🔍 Search for products..."
+    />
+  </div>
 
-.nav-item:hover {
-  color: #ffeb3b;
-}
+  <!-- Product Section -->
+  <main>
+    <section class="product-list" id="product-list"></section>
+  </main>
 
-/* ======== MOBILE MENU ======== */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.6rem;
-  cursor: pointer;
-}
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <span class="close-btn" id="close-cart">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">
+        Total: ₹<span id="cart-total">0</span>
+      </p>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
 
-/* Responsive Navbar for Phones */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background: var(--accent);
-    text-align: center;
-    gap: 1rem;
-    padding: 1rem 0;
-    display: none;
-  }
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ShopSphere | Made with 💖 using HTML, CSS & JS</p>
+  </footer>
 
-  .nav-links.active {
-    display: flex;
-    animation: fadeIn 0.3s ease;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
-/* Animation for smooth open */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+  <script src="script.js"></script>
+</body>
+</html>
