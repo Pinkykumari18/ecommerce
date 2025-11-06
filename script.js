@@ -1,10 +1,10 @@
 // 🛍️ Product data (all images visible from Unsplash / Pexels)
 const products = [
-  { id: 1, name: "Wireless Headphones", price: 1500, category: "electronics", image: "https://images.unsplash.com/photo-1585386959984-a415522316d1?w=600" },
-  { id: 2, name: "Smart Watch", price: 2500, category: "electronics", image: "https://images.unsplash.com/photo-1519400191540-3a3f5fd7f6d4?w=600" },
-  { id: 3, name: "Bluetooth Speaker", price: 1300, category: "gadgets", image: "https://images.unsplash.com/photo-1606813902987-3b58cdb4e6b4?w=600" },
-  { id: 4, name: "Gaming Mouse", price: 900, category: "gadgets", image: "https://images.unsplash.com/photo-1587202372775-98927f6a3a1e?w=600" },
-  { id: 5, name: "Laptop Bag", price: 1200, category: "accessories", image: "https://images.unsplash.com/photo-1600180758890-6b94519a5d95?w=600" },
+  { id: 1, name: "Wireless Headphones", price: 1500, category: "electronics", image: "images/headphone.jpeg" },
+  { id: 2, name: "Smart Watch", price: 2500, category: "electronics", image: "images/smartwatch.jpeg" },
+  { id: 3, name: "Bluetooth Speaker", price: 1300, category: "gadgets", image: "images/speaker.jpeg" },
+  { id: 4, name: "Gaming Mouse", price: 900, category: "gadgets", image: "images/mouse.jpeg" },
+  { id: 5, name: "Laptop Bag", price: 1200, category: "accessories", image: "images/laptopbag.jpeg" },
   { id: 6, name: "Leather Wallet", price: 1000, category: "accessories", image: "https://images.unsplash.com/photo-1603782939793-8a8d2fce94aa?w=600" },
   { id: 7, name: "Home Lamp", price: 1500, category: "home", image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600" },
   { id: 8, name: "Sofa Cushion", price: 800, category: "home", image: "https://images.unsplash.com/photo-1616628188335-28ac9d5c8813?w=600" },
@@ -150,4 +150,3 @@ checkoutBtn.onclick = () => {
   updateCart();
   cartModal.style.display = "none";
 };
-
