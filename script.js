@@ -1,6 +1,6 @@
 // 🛍️ Product data (all images visible from Unsplash / Pexels)
 const products = [
-  { id: 1, name: "Wireless Headphones", price: 1500, category: "electronics", image: "images/headphone.jpeg" },
+  { id: 1, name: "Wireless Headphones", price: 1500, category: "electronics", image: "headphone.jpeg" },
   { id: 2, name: "Smart Watch", price: 2500, category: "electronics", image: "images/smartwatch.jpeg" },
   { id: 3, name: "Bluetooth Speaker", price: 1300, category: "gadgets", image: "images/speaker.jpeg" },
   { id: 4, name: "Gaming Mouse", price: 900, category: "gadgets", image: "images/mouse.jpeg" },
@@ -150,3 +150,4 @@ checkoutBtn.onclick = () => {
   updateCart();
   cartModal.style.display = "none";
 };
+
