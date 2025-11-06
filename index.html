@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopSphere - E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🛍️ ShopSphere</h1>
+    <div class="header-actions">
+      <button id="theme-toggle">🌙</button>
+      <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li class="nav-item active" data-category="all">All</li>
+      <li class="nav-item" data-category="electronics">Electronics</li>
+      <li class="nav-item" data-category="fashion">Fashion</li>
+      <li class="nav-item" data-category="accessories">Accessories</li>
+      <li class="nav-item" data-category="home">Home</li>
+      <li class="nav-item" data-category="gadgets">Gadgets</li>
+    </ul>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="🔍 Search for products..." />
+  </div>
+
+  <!-- Product Section -->
+  <main>
+    <section class="product-list" id="product-list"></section>
+  </main>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <span class="close-btn" id="close-cart">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Total: ₹<span id="cart-total">0</span></p>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 ShopSphere | Made with 💖 using HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
